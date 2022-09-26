@@ -1,0 +1,33 @@
+.title_margin-bottom{
+  margin-bottom: 50px;
+}
+.about {
+  padding-top: 0px;
+}
+.example {
+  display: flex;
+  column-gap: 30px;
+}
+.example__icon{
+  display: block;
+  max-width: 100%;
+}
+.example__title{
+  position: relative;
+}
+.example__over-text {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  width: 370px;
+  height: 70px;
+  text-transform: uppercase;
+  color: var(--hero-logo-text);
+  background: rgba(47, 48, 58, 0.8);
+}

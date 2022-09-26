@@ -1,0 +1,62 @@
+.team-section {
+  background-color: var(--team-btn-back-color);
+}
+
+.workers {
+  display: flex;
+  column-gap: 30px;
+}
+
+.worker__item {
+  background-color: var(--hero-logo-text);
+  flex-basis: calc(100% - 90px / 4);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.worker__names-position {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.worker__name {
+  color: var(--secondary-color-text);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.worker__profession {
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+}
+.worker__socials {
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+}
+.worker__socials-icon {
+  display: flex;
+  fill: var(--social-list-icon);
+  transition: fill var(--transition-dur-and-func);
+
+  .worker__socials-link:hover &,
+  .worker__socials-link:focus & {
+    fill: var(--hero-logo-text);
+  }
+}
+
+.worker__socials-link {
+ @extend %socials;
+  transition: background-color var(--transition-dur-and-func);
+
+  &:hover,
+  &:focus {
+    color: var(--hero-logo-text);
+    background-color: var(--accent-color);
+  }
+}

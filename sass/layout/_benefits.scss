@@ -1,0 +1,31 @@
+.benefits {
+  display: flex;
+  column-gap: 30px;
+}
+
+.benefits__title {
+  color: var(--secondary-color-text);
+  font-size: 14px;
+  line-height: 1.1;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.benefits__text {
+  font-size: 14px;
+  line-height: 1.7;
+  width: 270px;
+}
+
+.benefits__item {
+  flex-basis: calc(100% - 90px / 4);
+
+  & > .benefits__wrapper {
+    display: flex;
+    background-color: var(--team-btn-back-color);
+    height: 120px;
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+  }
+}

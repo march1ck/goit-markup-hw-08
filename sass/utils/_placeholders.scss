@@ -1,0 +1,13 @@
+%socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+%button {
+  color: var(--hero-logo-text);
+  background-color: var(--accent-color);
+}

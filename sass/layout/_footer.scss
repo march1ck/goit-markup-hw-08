@@ -1,0 +1,117 @@
+.page-footer {
+  background-color: var(--secondary-back-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.logo__margin-bottom {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.logo__second-part--white {
+  color: var(--hero-logo-text);
+}
+
+.address__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+.address__link {
+  color: var(--hero-logo-text);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  transition: color var(--transition-dur-and-func);
+}
+.address__contacts {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  transition: color var(--transition-dur-and-func);
+}
+
+.footer__socials--margin-left {
+  margin-left: 70px;
+}
+.footer-socials__title {
+  color: var(--hero-logo-text);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.footer-socials__list {
+  display: flex;
+  column-gap: 10px;
+}
+.footer-socials__link {
+  @extend %socials;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--hero-logo-text);
+  transition: background var(--transition-dur-and-func);
+
+  &:hover,
+  &:focus {
+    background: var(--accent-color);
+  }
+}
+.footer-social__icon {
+  fill: currentColor;
+}
+
+.subscribe {
+  margin-left: auto;
+}
+
+.form-footer {
+  display: flex;
+}
+
+.footer-mailing__input {
+  font-family: $fontPrimary;
+  display: block;
+  width: 358px;
+  height: 50px;
+  font-size: 16px;
+  line-height: 1.25;
+  padding-left: 15px;
+  margin-right: 12px;
+  border-radius: 4px;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  outline: none;
+}
+
+.footer-button {
+  font-family:  $fontPrimary;
+  display: flex;
+  position: relative;
+  @include font(16px, 700, 0.06em);
+  @extend %button;
+  line-height: 1.88;
+  border-radius: 4px;
+  border: none;
+  width: 200px;
+  height: 50px;
+  padding: 10px 28px;
+  cursor: pointer;
+  transition: color var(--transition-dur-and-func),
+    background-color var(--transition-dur-and-func),
+    box-shadow var(--transition-dur-and-func);
+
+  &:focus,
+  &:hover {
+    background: var(--hidden-btn-hero-color);
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+    border-radius: 4px;
+  }
+}
+
+.footer-button__icon {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  width: 24px;
+  height: 24px;
+  fill: #ffffff;
+}
