@@ -1,0 +1,15 @@
+@media screen and (max-width: 767px) {
+  .mobile-menu__contact-list {
+    @include font(34px, 500, 0.02em);
+    line-height: 1.17;
+    margin-top: auto;
+    margin-bottom: 64px;
+  }
+  .mobile-menu__tel {
+    color: var(--accent-color);
+  }
+  .mobile-menu__email {
+    font-size: 24px;
+    color: var(--primary-color-text);
+  }
+}

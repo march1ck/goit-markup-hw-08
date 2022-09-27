@@ -1,0 +1,16 @@
+@media screen and (max-width: 767px) {
+  .mobile-nav__list {
+    $fontPrimary: Roboto, sans-serif;
+    @include font(40px, 500, 0.02em);
+    line-height: 1.175;
+  }
+  .mobile-nav__item:not(:last-child){
+    margin-bottom: 32px;
+  }
+  .mobile-nav__link{
+    color: var(--secondary-color-text);
+  }
+  .mobile-nav__link--current{
+    color: var(--accent-color);
+  }
+}
