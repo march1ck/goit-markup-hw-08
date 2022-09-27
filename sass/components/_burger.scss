@@ -1,7 +1,18 @@
-.open-mobile-menu-btn {
-  border: none;
-  padding: 0;
-  background-color: transparent;
-  line-height: 0;
-
+@media screen and (max-width: 767px) {
+  .open-mobile-menu-btn {
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    line-height: 0;
+  }
+  .open-mobile-menu-btn__icon {
+    width: 40px;
+    height: 40px;
+  }
 }
+@media screen and (min-width: 768px) {
+  .open-mobile-menu-btn {
+    display: none;
+  }
+}
+
