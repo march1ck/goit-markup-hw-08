@@ -2,14 +2,14 @@
   background-color: var(--team-btn-back-color);
 }
 
-.workers {
-  display: flex;
-  column-gap: 30px;
+.worker__icon {
+  max-width: 100%;
+  display: block;
+  height: auto;
 }
 
 .worker__item {
   background-color: var(--hero-logo-text);
-  flex-basis: calc(100% - 90px / 4);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -22,8 +22,7 @@
 
 .worker__name {
   color: var(--secondary-color-text);
-  font-weight: 500;
-  font-size: 16px;
+  @include font(16px, 500, 0.003em);
   line-height: 1.2;
   text-align: center;
   margin-bottom: 10px;
@@ -51,12 +50,40 @@
 }
 
 .worker__socials-link {
- @extend %socials;
+  @extend %socials;
   transition: background-color var(--transition-dur-and-func);
 
   &:hover,
   &:focus {
     color: var(--hero-logo-text);
     background-color: var(--accent-color);
+  }
+}
+@media screen and (max-width: 767px) {
+  .workers {
+    display: block;
+  }
+  .worker__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .workers {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 30px;
+  }
+  .worker__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .workers {
+    display: flex;
+    gap: 30px;
+  }
+  .worker__item {
+    width: calc(100% - 90px / 4);
   }
 }

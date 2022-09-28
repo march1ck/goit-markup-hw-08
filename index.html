@@ -44,7 +44,7 @@
         </nav>
 
         <button type="button" class="open-mobile-menu-btn" data-menu-open>
-          <svg class="open-mobile-menu-btn__icon" >
+          <svg class="open-mobile-menu-btn__icon">
             <use href="./images/icon.svg#icon-burger"></use>
           </svg>
         </button>
@@ -153,11 +153,16 @@
       <!-- Benefits -->
       <section class="section">
         <div class="container">
-          <h2 class=" title visually-hidden">Наші переваги</h2>
+          <h2 class="title visually-hidden">Наші переваги</h2>
           <ul class="benefits list">
             <li class="benefits__item">
               <div class="benefits__wrapper">
-                <svg class="benefits__icon" aria-label="antenna icon" width="70" height="70">
+                <svg
+                  class="benefits__icon"
+                  aria-label="antenna icon"
+                  width="70"
+                  height="70"
+                >
                   <use href="./images/icon.svg#icon-antenna"></use>
                 </svg>
               </div>
@@ -169,7 +174,12 @@
             </li>
             <li class="benefits__item">
               <div class="benefits__wrapper">
-                <svg class="benefits__icon" aria-label="clock icon" width="70" height="70">
+                <svg
+                  class="benefits__icon"
+                  aria-label="clock icon"
+                  width="70"
+                  height="70"
+                >
                   <use href="./images/icon.svg#icon-clock"></use>
                 </svg>
               </div>
@@ -181,7 +191,12 @@
             </li>
             <li class="benefits__item">
               <div class="benefits__wrapper">
-                <svg class="benefits__icon" aria-label="diagram icon" width="70" height="70">
+                <svg
+                  class="benefits__icon"
+                  aria-label="diagram icon"
+                  width="70"
+                  height="70"
+                >
                   <use href="./images/icon.svg#icon-diagram"></use>
                 </svg>
               </div>
@@ -192,7 +207,12 @@
             </li>
             <li class="benefits__item">
               <div class="benefits__wrapper">
-                <svg class="benefits__icon" aria-label="astrounaut icon" width="70" height="70">
+                <svg
+                  class="benefits__icon"
+                  aria-label="astrounaut icon"
+                  width="70"
+                  height="70"
+                >
                   <use href="./images/icon.svg#icon-astronaut"></use>
                 </svg>
               </div>
@@ -206,14 +226,15 @@
         </div>
       </section>
       <!-- Works -->
-      <!-- <section class="work-section about section">
+      <section class="work-section about section">
         <div class="container">
           <h2 class="title title_margin-bottom">Чим ми займаємося</h2>
           <ul class="example list">
             <li class="example__title">
               <img
                 class="example__icon"
-                src="./images/image1.jpg"
+                srcset="./images/desktop/img@2x.jpg 2x"
+                src="./images/desktop/img.jpg"
                 alt="Розробка коду"
               />
               <p class="example__over-text">Десктопні додатки</p>
@@ -221,7 +242,8 @@
             <li class="example__title">
               <img
                 class="example__icon"
-                src="./images/image2.jpg"
+                srcset="./images/desktop/css@2x.jpg 2x"
+                src="./images/desktop/css1x.jpg"
                 alt="Оптимізація сайту"
               />
               <p class="example__over-text">Мобільні додатки</p>
@@ -229,25 +251,50 @@
             <li class="example__title">
               <img
                 class="example__icon"
-                src="./images/image3.jpg"
+                srcset="./images/desktop/js@2x.jpg 2x"
+                src="./images/desktop/js.1x.jpg"
                 alt="Дизайн сайту"
               />
               <p class="example__over-text">Дизайнерські рішення</p>
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- Team -->
-      <!-- <section class="team-section section">
+      <section class="team-section section">
         <div class="container">
           <h2 class="title title_margin-bottom">Наша команда</h2>
           <ul class="workers list">
             <li class="worker__item">
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/desktop/product-d.jpg    1x,
+                    ./images/desktop/product-d@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px )"
+                  srcset="
+                    ./images/tablet/product-t.jpg    1x,
+                    ./images/tablet/product-t@2x.jpj 2x
+                  "
+                />
+
+                <source
+                  media="(max-width: 767 )"
+                  srcset="
+                    ./images/mobile/product-m.jpg   1x,
+                    ./images/mobile/product-m@2.jpg 2x
+                  "
+                />
+              </picture>
               <img
                 class="worker__icon"
-                src="./images/employee1.jpg"
+                src="./images/mobile/product-m.jpg"
                 alt="Вродливий працівник в окулярах, працює дизайнером"
-                width="270"
+                
               />
               <div class="worker__names-position">
                 <h3 class="worker__name">Ігор Дем'яненко</h3>
@@ -306,16 +353,38 @@
                       </svg>
                     </a>
                   </li>
-                
                 </ul>
               </div>
             </li>
             <li class="worker__item">
+              <picture>
+                <source
+                  media="(min-width: 1200px )"
+                  srcset="
+                    ./images/desktop/frontend.jpg   1x,
+                    ./images/desktop/frontend@2.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/tablet/frontend-t.jpg   1x,
+                    ./images/tablet/frontend-t@2.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width: 767px )"
+                  srcset="
+                    ./images/mobile/frontend-m.jpg   1x,
+                    ./images/mobile/frontend-m@2.jpg 2x
+                  "
+                />
+              </picture>
               <img
                 class="worker__icon"
-                src="./images/employee2.jpg"
+                src="./images/mobile/frontend-m.jpg"
                 alt="Усміхнена фронтент розробник Ольга"
-                width="270"
+                
               />
               <div class="worker__names-position">
                 <h3 class="worker__name">Ольга Рєпіна</h3>
@@ -377,12 +446,34 @@
                 </ul>
               </div>
             </li>
-             <li class="worker__item">
+            <li class="worker__item">
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/desktop/marketing.jpg   1x,
+                    ./images/desktop/marketing@2.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px )"
+                  srcset="
+                    ./images/tablet/marketing-t.jpg   1x,
+                    ./images/tablet/marketing-t@2.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width: 767px )"
+                  srcset="
+                    ./images/mobile/marketing-m.jpg   1x,
+                    ./images/mobile/marketing-m@2.jpg 2x
+                  "
+                />
+              </picture>
               <img
                 class="worker__icon"
-                src="./images/employee3.jpg"
+                src="./images/mobile/marketing-m.jpg"
                 alt="Щирий Микола, який працює у відділі маректингу"
-                width="270"
               />
               <div class="worker__names-position">
                 <h3 class="worker__name">Микола Тарасов</h3>
@@ -441,16 +532,37 @@
                       </svg>
                     </a>
                   </li>
-                
                 </ul>
               </div>
             </li>
             <li class="worker__item">
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/desktop/designer.jpg   1x,
+                    ./images/desktop/designer@2.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768)"
+                  srcset="
+                    ./images/tablet/designer-t.jpg   1x,
+                    ./images/tablet/designer-t@2.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width: 767px )"
+                  srcset="
+                    ./images/mobile/designer-m.jpg   1x,
+                    ./images/mobile/designer-m@2.jpg 2x
+                  "
+                />
+              </picture>
               <img
                 class="worker__icon"
-                src="./images/employee4.jpg"
+                src="./images/mobile/designer-m.jpg"
                 alt="Працівник року, чорноволосий Михайло"
-                width="270"
               />
               <div class="worker__names-position">
                 <h3 class="worker__name">Михайло Єрмаков</h3>
@@ -509,13 +621,12 @@
                       </svg>
                     </a>
                   </li>
-                
                 </ul>
               </div>
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- Regular customers -->
       <!-- <section class="section">
         <div class="container">

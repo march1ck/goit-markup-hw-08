@@ -1,7 +1,22 @@
-.title {
-  color: var(--secondary-color-text);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
+@media screen and (max-width: 1999px) {
+  .title {
+    color: var(--secondary-color-text);
+    @include font(28px, 700, 0.03em);
+    line-height: 1.17;
+    text-align: center;
+  }
+   .title_margin-bottom {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px){
+  .title {
+    color: var(--secondary-color-text);
+    @include font(36px, 700, 0.03em);
+    line-height: 1.17;
+    text-align: center;
+  }
+  .title_margin-bottom {
+    margin-bottom: 50px;
+  }
 }
