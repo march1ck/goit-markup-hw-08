@@ -78,14 +78,14 @@ ol {
 
 @media screen and (min-width: 480px) {
   .container {
-    max-width: 480px;
+    max-width: 450px;
     margin-left: auto;
     margin-right: auto;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 758px;
+    max-width: 737px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -577,9 +577,16 @@ ol {
 
 .page-footer-container {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .page-footer-container {
+    align-items: baseline;
+  }
+}
 .page-header {
   padding-top: 16px;
   padding-bottom: 16px;
@@ -869,11 +876,9 @@ ol {
 }
 .customers {
   display: flex;
-  column-gap: 30px;
-}
-
-.customers__item {
-  flex-basis: calc(100% - 25px);
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 30px;
 }
 
 .customers__link {
@@ -897,6 +902,24 @@ ol {
   fill: currentColor;
 }
 
+@media screen and (max-width: 767px) {
+  .customers__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .customers__item {
+    width: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .customers {
+    flex-wrap: nowrap;
+  }
+  .customers__item {
+    flex-basis: calc(100% - 25px);
+  }
+}
 .border-head {
   border-bottom: 1px solid var(--border);
 }
@@ -996,6 +1019,10 @@ ol {
   line-height: 1.9;
 }
 
+.general-footer {
+  text-align: center;
+}
+
 .page-footer {
   background-color: var(--secondary-back-color);
   padding-top: 60px;
@@ -1031,11 +1058,8 @@ ol {
   transition: color var(--transition-dur-and-func);
 }
 
-.footer__socials--margin-left {
-  margin-left: 70px;
-}
-
 .footer-socials__title {
+  text-align: center;
   color: var(--hero-logo-text);
   margin-bottom: 20px;
   text-transform: uppercase;
@@ -1059,19 +1083,18 @@ ol {
   fill: currentColor;
 }
 
-.subscribe {
-  margin-left: auto;
-}
-
 .form-footer {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 
 .footer-mailing__input {
   font-family: Roboto, sans-serif;
-  display: block;
-  width: 358px;
   height: 50px;
+  width: 100%;
+  max-width: 450px;
   font-size: 16px;
   line-height: 1.25;
   padding-left: 15px;
