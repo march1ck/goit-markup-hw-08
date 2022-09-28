@@ -1149,10 +1149,16 @@ ol {
   fill: #ffffff;
 }
 
-@media screen and (min-width: 767px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .page-footer-container__box {
     flex-direction: row;
     gap: 165px;
+  }
+  .subscribe {
+    width: 100%;
+  }
+  .footer-mailing {
+    width: 100%;
   }
 }
 @media screen and (min-width: 1200px) {
