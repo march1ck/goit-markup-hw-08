@@ -112,7 +112,7 @@
   fill: #ffffff;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width:767px) and (max-width: 1199px) {
   .page-footer-container__box {
     flex-direction: row;
     gap: 165px;
