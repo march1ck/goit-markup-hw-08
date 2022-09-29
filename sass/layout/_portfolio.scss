@@ -1,6 +1,6 @@
 @media screen and (min-width: 320px) {
   .overlay {
-    position: relative;
+      position: relative;
     overflow: hidden;
     transform: translateY(0%);
   }
@@ -34,12 +34,15 @@
   }
   .description {
     padding: 20px 24px;
+    flex-grow: 1;
     border-bottom: 1px solid var(--border);
     border-right: 1px solid var(--border);
     border-left: 1px solid var(--border);
   }
   .grid__link {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     transition: box-shadow var(--transition-dur-and-func);
 
     &:hover,

@@ -697,7 +697,7 @@ ol {
   margin-left: auto;
   margin-right: auto;
   background-color: var(--hero-bg-color);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/mobile/header-mobile.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile/header-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1038,12 +1038,15 @@ ol {
   }
   .description {
     padding: 20px 24px;
+    flex-grow: 1;
     border-bottom: 1px solid var(--border);
     border-right: 1px solid var(--border);
     border-left: 1px solid var(--border);
   }
   .grid__link {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     transition: box-shadow var(--transition-dur-and-func);
   }
   .grid__link:hover, .grid__link:focus {
