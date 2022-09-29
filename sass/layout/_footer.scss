@@ -30,6 +30,7 @@
 }
 
 .footer-socials__title {
+  @include font(14px, 700, 0.03em);
   text-align: center;
   color: var(--hero-logo-text);
   margin-bottom: 20px;
@@ -64,9 +65,10 @@
 .footer-mailing__input {
   font-family: $fontPrimary;
   height: 50px;
-  width: 100%;
+  width:450px
+   ;
   max-width: 450px;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.25;
   padding-left: 15px;
   margin-right: 12px;
@@ -111,26 +113,33 @@
   height: 24px;
   fill: #ffffff;
 }
+@media screen and (max-width: 767px) {
+ 
+  .subscribe {
+    width: 100%;
+  }
+}
 
-@media screen and (min-width:767px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .page-footer-container__box {
     flex-direction: row;
+    align-items: baseline;
     gap: 165px;
   }
   .subscribe {
     width: 100%;
   }
 
-  .footer-mailing {
-    width: 100%;
+  .footer-mailing__input {
+    width: 450px;
   }
 }
 @media screen and (min-width: 1200px) {
   .page-footer-container__box {
     flex-direction: row;
     gap: 60px;
-    text-align: start;
     margin-bottom: 0;
+    align-items: baseline;
   }
   .form-footer {
     flex-direction: row;
