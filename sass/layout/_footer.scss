@@ -114,7 +114,6 @@
   fill: #ffffff;
 }
 @media screen and (max-width: 767px) {
- 
   .subscribe {
     width: 100%;
   }
@@ -145,6 +144,9 @@
     flex-direction: row;
     align-items: center;
     gap: 20px;
+  }
+  .footer-logo{
+    text-align: start;
   }
   .footer-socials__title {
     text-align: start;

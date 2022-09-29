@@ -1,0 +1,61 @@
+@media screen and (min-width: 320px) {
+  .modal-formi-agreement {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 10px;
+  }
+  .modal-form__check-field {
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+    padding-left: 13px;
+    
+    
+  }
+  .modal-form__checkbox {
+    appearance: none;
+    position: absolute;
+  }
+
+  .modal-form__own-checkbox {
+    width: 16px;
+    height: 15px;
+    margin-right: 7px;
+    border: 2px solid var(--secondary-color-text);
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-color var(--transition-dur-and-func);
+
+    .modal-form__checkbox :checked + & {
+      background-color: var(--accent-color);
+      transition: background-color var(--transition-dur-and-func);
+      border: none;
+    }
+
+    .modal-form__checkbox :focus + & {
+      box-shadow: 0 0 0 2px rgba(33, 150, 243, 0.5);
+    }
+  }
+
+  .modal-form__own-checkbox-icon {
+    display: none;
+
+    .modal-form__checkbox:checked + .modal-form__own-checkbox & {
+      display: block;
+      transition: fill var(--transition-dur-and-func);
+    }
+  }
+  .modal-form__text-agreement {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+  .modal-form__conditions {
+    color: var(--accent-color);
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
