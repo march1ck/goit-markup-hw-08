@@ -1,0 +1,22 @@
+.modal-form__button-submit {
+  @include font(16px, 700, 0.06em);
+  align-self: center;
+  width: 200px;
+  height: 50px;
+  border: none;
+  padding: 10px 52px;
+  border-radius: 4px;
+  cursor: pointer;
+  @extend %button;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: color var(--transition-dur-and-func),
+    background-color var(--transition-dur-and-func),
+    box-shadow var(--transition-dur-and-func);
+
+  &:hover,
+  &:focus {
+    background: var(--hidden-btn-hero-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+  }
+}

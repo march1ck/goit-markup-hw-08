@@ -22,3 +22,10 @@
     width: 90%;
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    max-width: 528px;
+    max-height: 581px;
+  }
+}

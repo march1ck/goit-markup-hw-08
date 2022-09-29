@@ -55,6 +55,11 @@
     }
   }
 }
+.page-nav :hover,
+.page-nav :focus {
+  color: var(--accent-color);
+}
+
 @media screen and (min-width: 1200px) {
   .menu {
     margin-left: 92px;

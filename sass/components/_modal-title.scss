@@ -7,3 +7,8 @@
     margin-bottom: 12px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .modal-form__title {
+    line-height: 1.15;
+  }
+}

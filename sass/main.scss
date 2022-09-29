@@ -10,7 +10,7 @@
 @import "./components/logo";
 @import "./components/page-header__container";
 @import "./components/mobile-menu__container";
-@import "./components/menu";
+@import "./components/header-menu";
 @import "./components/burger";
 @import "./components/mobile-menu";
 @import "./components/mobile-menu__close-btn";
@@ -26,10 +26,11 @@
 @import "./components/modal-title";
 @import "./components/modal-form";
 @import "./components/checkbox";
+@import "./components/modal-btn-submit";
 @import "./components/page-footer-container";
 @import "./components/portfolio-btn";
 
-@import "./layout/header";
+
 @import "./layout/hero";
 @import "./layout/benefits";
 @import "./layout/about";

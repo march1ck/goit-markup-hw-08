@@ -1,5 +1,5 @@
 @media screen and (min-width: 320px) {
-  .modal-formi-agreement {
+  .modal-form-agreement {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -8,11 +8,7 @@
   }
   .modal-form__check-field {
     display: flex;
-    font-size: 12px;
     align-items: center;
-    padding-left: 13px;
-    
-    
   }
   .modal-form__checkbox {
     appearance: none;
@@ -57,5 +53,11 @@
     &:hover {
       text-decoration: none;
     }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal-form__text-agreement {
+    font-size: 14px;
+    line-height: 1.7;
   }
 }
