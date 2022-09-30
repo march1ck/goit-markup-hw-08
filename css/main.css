@@ -85,7 +85,7 @@ ol {
 }
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 737px;
+    max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -240,7 +240,7 @@ ol {
   top: 0;
   z-index: 100;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: #ffffff;
   opacity: 0;
   visibility: hidden;
@@ -275,7 +275,7 @@ ol {
 .mobile-menu__box {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 100%;
 }
 
 @media screen and (max-width: 767px) {
@@ -297,6 +297,9 @@ ol {
 }
 @media screen and (max-width: 767px) {
   .mobile-menu__contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
     font-size: 34px;
     font-weight: 500;
     letter-spacing: 0.02em;
@@ -421,9 +424,7 @@ ol {
 @media screen and (min-width: 100px) {
   .modal {
     max-width: 450px;
-    max-height: 609px;
     width: 100%;
-    height: 100%;
     background-color: #ffffff;
     position: absolute;
     top: 50%;
@@ -443,7 +444,6 @@ ol {
 @media screen and (min-width: 1200px) {
   .modal {
     max-width: 528px;
-    max-height: 581px;
   }
 }
 @media screen and (min-width: 100px) {
@@ -562,6 +562,7 @@ ol {
     position: absolute;
   }
   .modal-own-checkbox {
+    flex-shrink: 0;
     width: 16px;
     height: 15px;
     margin-right: 7px;
@@ -697,7 +698,6 @@ ol {
   font-size: 14px;
   line-height: 1.25;
   padding-left: 15px;
-  margin-right: 12px;
   border-radius: 4px;
   color: rgba(255, 255, 255, 0.6);
   background-color: transparent;
@@ -730,7 +730,7 @@ ol {
     width: 358px;
   }
 }
-@media screen and (min-width: 30px) {
+@media screen and (min-width: 320px) {
   .footer-button {
     font-family: Roboto, sans-serif;
     display: flex;
@@ -808,7 +808,6 @@ ol {
 .hero {
   text-align: center;
   max-width: 480px;
-  height: 400px;
   padding: 118px 0;
   margin-left: auto;
   margin-right: auto;
@@ -870,7 +869,6 @@ ol {
 @media screen and (min-width: 1200px) {
   .hero {
     max-width: 1600px;
-    height: 600px;
     padding: 200px 0;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/desktop/work.jpg");
   }

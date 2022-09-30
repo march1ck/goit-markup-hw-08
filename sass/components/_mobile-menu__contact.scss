@@ -1,9 +1,13 @@
 @media screen and (max-width: 767px) {
   .mobile-menu__contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
     @include font(34px, 500, 0.02em);
     line-height: 1.17;
     margin-top: auto;
     margin-bottom: 64px;
+  
   }
   .mobile-menu__tel {
     color: var(--accent-color);
