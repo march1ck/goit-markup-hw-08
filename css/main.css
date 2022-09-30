@@ -340,8 +340,6 @@ ol {
     display: flex;
     flex-direction: column;
     row-gap: 10px;
-  }
-  .auth-nav--margin-left {
     margin-left: auto;
   }
   .auth-nav__icon {
@@ -354,7 +352,7 @@ ol {
     display: flex;
     align-items: center;
     color: var(--primary-color-text);
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 500;
     letter-spacing: 0.02em;
     line-height: 1.1;
@@ -369,6 +367,9 @@ ol {
     display: flex;
     flex-direction: row;
     column-gap: 30px;
+  }
+  .auth-nav__link {
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 1999px) {
@@ -1158,7 +1159,7 @@ ol {
 .footer-mailing__input {
   font-family: Roboto, sans-serif;
   height: 50px;
-  width: 300px;
+  width: 100%;
   max-width: 450px;
   font-size: 14px;
   line-height: 1.25;
@@ -1203,7 +1204,10 @@ ol {
   fill: #ffffff;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 480px) {
+  .footer-mailing__input {
+    width: 100%;
+  }
   .subscribe {
     width: 100%;
   }
@@ -1213,9 +1217,6 @@ ol {
     flex-direction: row;
     align-items: baseline;
     gap: 165px;
-  }
-  .subscribe {
-    width: 100%;
   }
   .footer-mailing__input {
     width: 450px;
@@ -1231,7 +1232,7 @@ ol {
   .form-footer {
     flex-direction: row;
     align-items: center;
-    gap: 20px;
+    gap: 12px;
   }
   .footer-logo {
     text-align: start;
