@@ -1,0 +1,19 @@
+@media screen and (min-width: 320px) {
+  .address__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  .address__link {
+    color: var(--hero-logo-text);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    transition: color var(--transition-dur-and-func);
+  }
+  .address__contacts {
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    transition: color var(--transition-dur-and-func);
+  }
+}
