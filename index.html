@@ -827,7 +827,7 @@
       <div class="modal">
         <button type="button" class="modal__close-btn" data-modal-close>
           <svg
-            class="modal__close-icon"
+            class="close-modal-icon"
             aria-label="close item"
             width="18"
             height="18"
@@ -895,28 +895,31 @@
               ></textarea>
             </label>
           </div>
-          <div class="modal-form-agreement">
-            <label class="modal-form__check-field">
+
+          <div class="custom-checkbox">
+            <label class="custom-checkbox__label">
               <input
                 type="checkbox"
-                class="modal-form__checkbox"
+                class="custom-checkbox__input"
                 required
                 name="agreement"
               />
-              <svg class="modal-form__own-checkbox">
+              <svg class="modal-own-checkbox" width="16" height="15">
                 <use
-                  class="modal-form__own-checkbox-icon"
+                  class="modal-own-checkbox-icon"
                   href="./images/icon.svg#icon-check"
                 ></use>
               </svg>
-              <span class="modal-form__text-agreement">
-                Погоджуюся з розсилкою та приймаю&nbsp;
-                <a href="#" class="modal-form__conditions">Умови договору</a>
+              <span class="modal-own-checkbox__agreement">
+                Погоджуюся з розсилкою та приймаю
+                <a href="" class="modal-own-checkbox__conditions"
+                  >Умови договору</a
+                >
               </span>
             </label>
           </div>
 
-          <button type="submit" class="modal-form__button-submit">
+          <button type="submit" class="modal-form__btn-submit">
             Відправити
           </button>
         </form>

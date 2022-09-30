@@ -22,14 +22,14 @@
 @import "./components/title";
 @import "./components/backdrop";
 @import "./components/modal";
-@import "./components/modal-close-btn";
-@import "./components/modal-title";
-@import "./components/modal-form";
-@import "./components/checkbox";
+@import "./components/modal__close-btn";
+@import "./components/modal-window";
+@import "./components/modal-form__title";
+@import "./components/modal-form__box";
+@import "./components/custom-checkbox";
 @import "./components/modal-btn-submit";
 @import "./components/page-footer-container";
 @import "./components/portfolio-btn";
-
 
 @import "./layout/hero";
 @import "./layout/benefits";

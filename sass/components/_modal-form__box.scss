@@ -1,23 +1,14 @@
 @media screen and (min-width: 320px) {
-  .modal-form {
-    padding: 0px;
-  }
-  .modal-form {
-    display: flex;
-    flex-direction: column;
-  }
   .modal-form__box {
     display: flex;
     flex-direction: column;
+    gap: 10px;
   }
   .modal-form__desc {
     display: block;
-    @include font(12px, 400, 0.01em);
+    font-size: 12px;
     line-height: 1.16;
     margin-bottom: 4px;
-  }
-  .modal-form__field {
-    margin-bottom: 10px;
   }
   .modal-form__input {
     width: 100%;
@@ -49,6 +40,7 @@
       fill: var(--accent-color);
     }
   }
+
   .modal-form__comment {
     display: block;
     resize: none;
@@ -70,4 +62,3 @@
     }
   }
 }
-
